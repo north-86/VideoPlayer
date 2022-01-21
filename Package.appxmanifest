@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
+  <Identity
+    Name="70e614d1-6229-485f-ac32-45fda9a2ebd9"
+    Publisher="CN=alexp"
+    Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="70e614d1-6229-485f-ac32-45fda9a2ebd9" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>VideoPlayer</DisplayName>
+    <PublisherDisplayName>Aliaksandr Prystauka</PublisherDisplayName>
+    <Logo>Assets\vp50.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="VideoPlayer.App">
+      <uap:VisualElements
+        DisplayName="VideoPlayer"
+        Description="VideoPlayer"
+        BackgroundColor="transparent" Square44x44Logo="Assets\vp.png" Square150x150Logo="Assets\vp150.png">
+        <uap:DefaultTile>
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <uap:Capability Name="videosLibrary"/>
+  </Capabilities>
+</Package>
