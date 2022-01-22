@@ -48,6 +48,7 @@ namespace VideoPlayer
             {
                 var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
                 mediaElem.SetSource(stream, file.ContentType);
+                textblock1.Text = "File name - " + file.Name + "  (file creation date - " + file.DateCreated + ")";
                 mediaElem.Play();
             }
         }

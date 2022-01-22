@@ -8,6 +8,9 @@
     mc:Ignorable="d">
     <Page.TopAppBar>
         <CommandBar x:Name="commandBar" Background="#008080" IsOpen="True" ClosedDisplayMode="Minimal">
+            <CommandBar.Content>
+                <TextBlock x:Name="textblock1" FontSize="16" Margin="15 15 0 0"/>
+            </CommandBar.Content>
             <AppBarButton Icon="OpenFile" Label="Open" Click="OpenClick"/>
         </CommandBar>
     </Page.TopAppBar>
