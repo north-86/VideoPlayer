@@ -15,6 +15,6 @@
         </CommandBar>
     </Page.TopAppBar>
     <Grid Background="Black">
-        <MediaElement x:Name="mediaElem" AutoPlay="True" IsFullWindow="False" AreTransportControlsEnabled="True" PosterSource="Images/videoplayer.png"/>
+        <MediaElement x:Name="mediaElem" AutoPlay="True" IsFullWindow="True" AreTransportControlsEnabled="True" PosterSource="Images/videoplayer.png"/>
     </Grid>
 </Page>
