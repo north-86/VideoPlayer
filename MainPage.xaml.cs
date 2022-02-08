@@ -50,7 +50,14 @@ namespace VideoPlayer
                 mediaElem.SetSource(stream, file.ContentType);
                 textblock1.Text = "File name - " + file.Name + "  (file creation date - " + file.DateCreated + ")";
                 mediaElem.Play();
+                commandBar.ClosedDisplayMode = AppBarClosedDisplayMode.Hidden;
+                mediaElem.AreTransportControlsEnabled = true;
             }
+        }
+
+        private void MediaElem_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            commandBar.ClosedDisplayMode = AppBarClosedDisplayMode.Minimal;
         }
     }
 }
